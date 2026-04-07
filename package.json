@@ -1,0 +1,20 @@
+{
+  "name": "forms-dom",
+  "version": "1.0.0",
+  "description": "Training playground for DOM manipulation.",
+  "keywords": [
+    "DOM"
+  ],
+  "license": "ISC",
+  "author": "Adrián Vázquez",
+  "main": "main.js",
+  "scripts": {
+    "dev": "pnpx servor src/ index.html 1234 --reload"
+  },
+  "devDependencies": {
+    "oxfmt": "^0.44.0",
+    "oxlint": "^1.59.0",
+    "servor": "^4.0.2"
+  },
+  "packageManager": "pnpm@10.30.3"
+}
