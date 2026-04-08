@@ -1,0 +1,50 @@
+/* outfit-regular - latin */
+@font-face {
+    font-display: swap; 
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/outfit-v15-latin-regular.woff2') format('woff2'); /
+  }
+  /* outfit-700 - latin */
+  @font-face {
+    font-display: swap; 
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../assets/fonts/outfit-v15-latin-700.woff2') format('woff2'); 
+  }
+
+  /* jersey-10-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Jersey 10';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../assets/fonts/jersey-10-v4-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+:root {
+  --black: #0c1217;
+  --grey: #a1adc7;
+  --white: #fffffe;
+  --dark-grey: #1b1f26;
+
+  --font: "Outfit", Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--black);
+  font-family: var(--font);
+  color: var(--grey)
+  
+}
+
+/* Temporal */
+
+svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--white);
+    stroke: var(--white);
+}
