@@ -3,27 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>DOM Playground</title>
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/reset.css" />
   </head>
   <body>
-    <search>
-      <?xml version="1.0" encoding="UTF-8"?><svg
-        id="search"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-      >
-        <path
-          d="m22,20v-1h-1v-1h-1v-1h-1v-1h-2v-1h1v-2h1v-6h-1v-2h-1v-1h-1v-1h-1v-1h-2v-1h-6v1h-2v1h-1v1h-1v1h-1v2h-1v6h1v2h1v1h1v1h1v1h2v1h6v-1h2v-1h1v2h1v1h1v1h1v1h1v1h2v-1h1v-2h-1Zm-10-5v1h-4v-1h-2v-1h-1v-2h-1v-4h1v-2h1v-1h2v-1h4v1h2v1h1v2h1v4h-1v2h-1v1h-2Z"
-        />
-      </svg>
-      <input type="text" />
-    </search>
-    <nav>
-      <ul>
-        <li>
-          <a
+    <header class="title-box">
+      <h1 class="title"><span>DOM</span> <span>Playground</span></h1>
+    </header>
+    <nav class="navbar">
+      <div class="collapse-container">
+        <?xml version="1.0" encoding="UTF-8"?><svg
+          class="collapse-button"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <polygon
+            points="11 13 12 13 12 14 13 14 13 15 14 15 14 16 15 16 15 17 16 17 16 18 17 18 17 19 16 19 16 20 15 20 15 19 14 19 14 18 13 18 13 17 12 17 12 16 11 16 11 15 10 15 10 14 9 14 9 13 8 13 8 11 9 11 9 10 10 10 10 9 11 9 11 8 12 8 12 7 13 7 13 6 14 6 14 5 15 5 15 4 16 4 16 5 17 5 17 6 16 6 16 7 15 7 15 8 14 8 14 9 13 9 13 10 12 10 12 11 11 11 11 13"
+          />
+        </svg>
+      </div>
+      <menu class="navbar-menu">
+        <li class="menu-item">
+          <search class="menu-search">
+            <?xml version="1.0" encoding="UTF-8"?><svg
+              id="search"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="m22,20v-1h-1v-1h-1v-1h-1v-1h-2v-1h1v-2h1v-6h-1v-2h-1v-1h-1v-1h-1v-1h-2v-1h-6v1h-2v1h-1v1h-1v1h-1v2h-1v6h1v2h1v1h1v1h1v1h2v1h6v-1h2v-1h1v2h1v1h1v1h1v1h1v1h2v-1h1v-2h-1Zm-10-5v1h-4v-1h-2v-1h-1v-2h-1v-4h1v-2h1v-1h2v-1h4v1h2v1h1v2h1v4h-1v2h-1v1h-2Z"
+              />
+            </svg>
+            <input type="text" placeholder="Search" />
+          </search>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link"
             ><?xml version="1.0" encoding="UTF-8"?><svg
               id="login"
               xmlns="http://www.w3.org/2000/svg"
@@ -91,7 +107,7 @@
             >Wizard</a
           >
         </li>
-      </ul>
+      </menu>
     </nav>
   </body>
 </html>
