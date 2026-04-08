@@ -110,6 +110,9 @@ color: var(--white);
     }
   }
 
+  li {
+    padding: 0.25rem;
+  }
 }
 
 .menu-search {
