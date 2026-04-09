@@ -37,11 +37,20 @@
 body {
   background-color: var(--black);
   font-family: var(--font);
-  color: var(--grey)
+  color: var(--grey);
+  
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "header header header"
+  "menu main main"
+  "menu main main";
   
 }
 
 .title-box {
+  grid-area: header;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -53,6 +62,7 @@ color: var(--white);
 }
 
 .navbar {
+  grid-area: menu;
   display: flex;
   flex-direction: column;
   width: fit-content;
@@ -128,6 +138,10 @@ color: var(--white);
     border: none;
     background-color: var(--dark-grey);
   }
+}
+
+main {
+  grid-area: main;
 }
 
 /* Temporal */
