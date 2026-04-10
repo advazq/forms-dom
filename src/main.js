@@ -1,7 +1,7 @@
 // Lógica para ocultar menú de navegación (sidebar)
 const collapseMenuButton = document.querySelector(".collapse-button");
 const navigationBar = document.querySelector(".navbar");
-const searchBar = document.querySelector(".menu-search");
+const searchBar = document.querySelector(".menu-search input");
 const textMenuItems = document.querySelectorAll(".menu-link span");
 
 const collapseMenu = (links) => {
