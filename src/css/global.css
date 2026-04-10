@@ -153,3 +153,7 @@ svg {
     stroke: var(--white);
 }
 
+.hidden {
+  display: none;
+}
+

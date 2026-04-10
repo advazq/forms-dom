@@ -4,8 +4,8 @@ const searchBar = document.querySelector(".menu-search");
 const textMenuItems = document.querySelectorAll(".menu-link span");
 
 const collapseMenu = (links) => {
-  links.forEach((link) => (link.textContent = ""));
-  searchBar.textContent = "";
+  links.forEach((link) => link.classList.toggle("hidden"));
+  searchBar.classList.toggle("hidden");
 };
 
 collapseMenuButton.addEventListener("click", function () {
