@@ -110,15 +110,17 @@
       </menu>
     </nav>
     <main>
-      <section class="main login">
+      <section class="main-section login">
         <div class="main-title">
           <h2>Login</h2>
         </div>
         <div class="playground-container login-container">
           <form>
-            <label>Username:<input type="email" /></label>
-            <label>Password:<input type="password" /></label>
-            <button type="submit">Log in</button>
+            <label for="username">Username:</label
+            ><input type="email" id="username" name="username" />
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" />
+            <button type="submit" class="button form-button">Log in</button>
           </form>
         </div>
       </section>
